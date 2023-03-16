@@ -6,7 +6,7 @@
 .MainPage {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(9, 115, 228, 0.23), rgba(0, 0, 0, 0.4)), url(images/background1.jpg);
+    background-image: linear-gradient(rgba(10, 120, 230, 0.2), rgba(0, 0, 0, 0.4)), url(images/background1.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
