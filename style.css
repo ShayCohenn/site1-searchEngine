@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.MainPage {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(23, 1, 80, 0.9), rgba(0, 0, 0, 0.6)), url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30vh;
+    color: white;
+    font-size: 50px;
+}
+
+.search {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.search input[type=text] {
+    width: 60vw;
+    height: 10%;
+    outline: none;
+    font-size: 100%;
+    border: none;
+    border-radius: 25vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(118, 118, 118);
+    font-size: larger;
+    padding-left: 20px;
+}
+.search input[type=text]::placeholder
+{
+    color: rgb(150, 150, 150)
+}
+
+.search input[type=submit] {
+    height: 40px;
+    width: 40px;
+    background-image: url(images/search.png);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position: relative;
+    right: 40px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+input[type=radio]:checked {
+    transform: scale(1.5);
+}
+
+label {
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: larger;
+    color: white;
+}

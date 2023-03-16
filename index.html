@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST SEARCH ENGINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="MainForm" class="MainPage">
+        <div class="title">
+            <header>Best Search Engine</header>
+        </div>
+        <div class="search">
+            <input type="text" id="searchBar" placeholder="search anything here">
+            <input type="submit" value="">
+        </div>
+        <div class="choice">
+            <input type="radio" id="google" name="radio" onclick="optionSelected()">
+            <label for="google">google</label>
+            <input type="radio" id="youtube" name="radio" onclick="optionSelected()">
+            <label for="youtube">youtube</label>
+            <input type="radio" id="amazon" name="radio" onclick="optionSelected()">
+            <label for="amazon">amazon</label>
+        </div>
+    </form>
+    <script>
+        function optionSelected() {
+            var selectedRadio = document.querySelector('input[name="radio"]:checked');
+            var selectedRadioID = selectedRadio ? selectedRadio.id : "";
+            switch (selectedRadioID) {
+                case "google":
+                    document.getElementById("MainForm").setAttribute("action", "https://www.google.com/search");
+                    document.getElementById("searchBar").setAttribute("name", "q");
+                    break;
+                case "youtube":
+                    document.getElementById("MainForm").setAttribute("action", "https://www.youtube.com/results");
+                    document.getElementById("searchBar").setAttribute("name", "search_query");
+                    break;
+                case "amazon":
+                    document.getElementById("MainForm").setAttribute("action", "https://www.amazon.com/s");
+                    document.getElementById("searchBar").setAttribute("name", "field-keywords");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
