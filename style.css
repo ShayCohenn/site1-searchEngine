@@ -83,6 +83,11 @@ label {
     color: rgb(255, 255, 255);
 }
 
+label:hover,
+input[type=radio]:hover {
+    cursor: pointer;
+}
+
 .carousel {
     position: fixed;
     bottom: 0%;
