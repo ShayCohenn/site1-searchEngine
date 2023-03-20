@@ -63,6 +63,7 @@
 
 .searchButton:hover {
     background-color: rgba(80, 80, 80, 0.2);
+    cursor: pointer;
 }
 
 .choice {
