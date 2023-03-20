@@ -25,10 +25,11 @@
     align-items: center;
     width: 80%;
     height: 5%;
+    min-height: 60px;
     border: none;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 50px;
-    top: 25%;
+    top: 23%;
     left: 10%;
 }
 
@@ -69,7 +70,7 @@
 .choice {
     text-align: center;
     position: relative;
-    top: 27%;
+    top: 24%;
 }
 
 input[type=radio]:checked {
@@ -80,4 +81,25 @@ label {
     padding-right: 3%;
     font-size: larger;
     color: rgb(255, 255, 255);
+}
+
+.carousel {
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    height: 10%;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    color: wheat;
 }
