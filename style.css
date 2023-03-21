@@ -55,7 +55,7 @@
     background-color: transparent;
     border: none;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 50%;
     background-position: center;
     border-radius: 50%;
     height: 100%;
@@ -77,17 +77,21 @@ input[type=radio]:checked {
     transform: scale(1.5);
 }
 
+input[type=radio]:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 label {
     padding-right: 3%;
     font-size: larger;
     color: rgb(255, 255, 255);
 }
 
-label:hover,
-input[type=radio]:hover {
+label:hover
+{
     cursor: pointer;
 }
-
 .carousel {
     position: fixed;
     bottom: 0%;
@@ -98,13 +102,9 @@ input[type=radio]:hover {
     height: 10%;
 }
 
-.carousel-inner {
-    position: relative;
-}
-
 .carousel-item {
     position: fixed;
     bottom: 4%;
-    left: 50%;
+    left: 48%;
     color: wheat;
 }
