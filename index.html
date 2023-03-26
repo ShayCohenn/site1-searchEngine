@@ -25,11 +25,13 @@
         </div>
         <div class="choice">
             <input type="radio" id="google" name="radio" onclick="optionSelected()" checked>
-            <label for="google">google</label>
+            <label for="google">Google</label>
             <input type="radio" id="youtube" name="radio" onclick="optionSelected()">
-            <label for="youtube">youtube</label>
+            <label for="youtube">YouTube</label>
             <input type="radio" id="amazon" name="radio" onclick="optionSelected()">
-            <label for="amazon">amazon</label>
+            <label for="amazon">Amazon</label>
+            <input type="radio" id="imdb" name="radio" onclick="optionSelected()">
+            <label for="imdb">IMDB</label>
         </div>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -71,6 +73,10 @@
                 case "amazon":
                     document.getElementById("MainForm").setAttribute("action", "https://www.amazon.com/s");
                     document.getElementById("searchBar").setAttribute("name", "field-keywords");
+                    break;
+                case "imdb":
+                    document.getElementById("MainForm").setAttribute("action", "https://www.imdb.com/find");
+                    document.getElementById("searchBar").setAttribute("name", "q");
                     break;
             }
         }
