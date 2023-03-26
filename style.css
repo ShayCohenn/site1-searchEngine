@@ -45,9 +45,12 @@
     padding-left: 3%;
 }
 
-.search:hover,
+.search:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .search:focus-within {
-    border: 1px solid white;
+    border: 1.5px solid white
 }
 
 ::placeholder {
