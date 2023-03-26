@@ -4,7 +4,7 @@
 }
 
 .MainPage {
-    height: 100vh;
+    height: 100dvh;
     background-image: linear-gradient(rgba(9, 115, 228, 0.23), rgba(0, 0, 0, 0.4)), url(images/background1.jpg);
     background-position: center;
     background-size: cover;
